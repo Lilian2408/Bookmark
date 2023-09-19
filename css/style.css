@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --DarkBlue: hsl(229, 31%, 21%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.toogler {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 50px;
+    font-size: 16px;
+}
+
+nav ul a {
+    color: rgb(185, 181, 181);
+    font-weight: 500;
+}
+
+nav button,
+#stay .date button {
+    background-color: hsl(0, 94%, 66%);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+
+}
+
+main .container {
+    width: 50%;
+    padding-top: 5px;
+}
+
+main img {
+    width: 45%;
+}
+
+main .container h1 {
+    font-size: 50px;
+    color: hsl(229, 31%, 21%);
+    font-weight: bold;
+}
+
+main .container p,
+#features .bookmark .mark p {
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+    padding: 15px 0;
+}
+
+main .button .btn,
+#features .bookmark .mark button,
+#frequent .asked button {
+    background-color: hsl(231, 69%, 60%);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+main .button .btn1 {
+    background-color: rgb(250, 248, 248);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#features .feat {
+    margin: 60px 60px;
+    text-align: center;
+    padding: 30px;
+}
+
+#features .header, #download .download, #frequent .header{
+    width: 50%;
+    margin: 0 auto 20px;
+    padding-bottom: 35px;
+}
+
+#features .feat h1 {
+    font-size: 28px;
+    font-weight: 400px;
+    color: hsl(229, 31%, 21%);
+    padding-bottom: 20px;
+
+}
+
+#features .feat p,
+#download .download p,
+#frequent .asked p, #features .bookmark .mark p{
+    font-size: 15px;
+    color: hsl(229, 8%, 60%);
+    line-height: 1.5;
+
+}
+
+#features .feat ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#features .feat ul li {
+    border-bottom: 1px solid var(--GrayishBlue);
+    padding: 0 50px 10px;
+}
+
+#features .feat ul li.active {
+    border-bottom: 3px solid var(--SoftRed);
+}
+
+#features .bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 120px;
+    gap: 80px;
+}
+
+#features .bookmark img {
+    width: 45%;
+}
+
+#features .bookmark .mark {
+    width: 35%;
+}
+
+#features .bookmark .mark h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+#download{
+    margin: 120px 0;
+}
+
+#download .download {
+    text-align: center;
+    margin-top: -40px;
+}
+
+#download .download h3 {
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+
+#download .down {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 60px 60px;
+
+}
+
+#download .load h4 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#download .load:nth-of-type(2){
+    margin-top: 60px;
+}
+
+#download .load:nth-of-type(3){
+    margin-top: 120px;
+}
+
+
+#download .load button {
+    background-color: hsl(231, 69%, 60%);
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 20px auto;
+    display: block;
+    width: 90%;
+    
+
+}
+
+#download .load {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px var(--GrayishBlue);
+}
+
+#download .load .image {
+    margin: 50px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#download .load p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#download .load .dot {
+    text-align: center;
+    color: rgb(80, 77, 77);
+}
+
+#frequent {
+    margin: 50px 50px;
+    text-align: center;
+}
+
+#frequent .asked h1 {
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 400px;
+}
+
+#frequent .asked ul {
+    list-style: none;
+    padding: 20px 30px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#frequent .freq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#frequent ul li{
+    border-bottom: 1px solid var(--GrayishBlue) ;
+    padding: 20px 0;
+}
+
+#frequent ul li:nth-of-type(1){
+    border-top: 1px solid var(--GrayishBlue);
+}
+
+#frequent ul li p{
+    display: none;
+}
+
+#stay .date {
+    text-align: center;
+    background-color: hsl(231, 69%, 60%);
+    padding: 50px 30px ;
+}
+
+#stay .date h4 {
+    font-size: 10px;
+    font-weight: 150;
+    padding: 10px 10px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+#stay .date p {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px 400px;
+    color: white;
+}
+
+#stay .date input {
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: hsl(229, 31%, 21%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+footer img {
+    filter: invert(1);
+}
+
+footer a {
+    color: white;
+}
+
+footer .icon{
+    display: flex;
+    gap: 10px;
+}
+
+#contact ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 50px;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    main .container h1 {
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    main .container p {
+        font-size: 13px;
+        padding: 13px 0;
+    }
+
+    main img {
+        width: 50%;
+    }
+
+    main .button .btn,
+    main .button .btn1 {
+        padding: 6px 8px;
+    }
+
+    #features .feat h1 {
+        font-size: 20px;
+    }
+
+    #features .header, #download .download, #frequent .header{
+        width: 65%;
+    }
+    #features .feat ul {
+        gap: 20px;
+        margin-left: 100px;
+    }
+
+    #features .bookmark .mark h2 {
+        font-size: 18px;
+    }
+
+    #features .bookmark .mark p {
+        font-size: 13px;
+    }
+
+    #download .down {
+        gap: 5px;
+        margin: 10px 10px;
+    }
+
+    #download .load {
+        border-radius: 10px;
+    }
+
+    #download .load .image {
+        margin: 10px 10px;
+        margin-bottom: 10px;
+    }
+
+    #download .load h4 {
+        font-size: 13px;
+    }
+
+    #download .load p {
+        font-size: 14px;
+    }
+
+    #download .load button {
+        padding: 6px 8px;
+        margin: 10px 60px;
+    }
+
+    #stay .date {
+        padding: 0 20px 50px;
+    }
+
+    #stay .date p {
+        font-size: 20px;
+        padding: 15px 300px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    main {
+        margin-left: 100px;
+    }
+
+    main .container h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    main .container p {
+        font-size: 12px;
+        padding: 11px 0;
+    }
+
+    main img {
+        width: 45%;
+    }
+
+    main .button .btn,
+    main .button .btn1 {
+        padding: 4px 6px;
+    }
+
+    #features .feat h1 {
+        font-size: 18px;
+    }
+
+    #features .feat p,
+    #download .download p,
+    #frequent .asked p {
+        padding: 13px 80px;
+    }
+
+    #features .feat ul {
+        gap: 10px;
+        margin-left: 60px;
+        font-size: 14px;
+    }
+
+    #features .bookmark .mark h2 {
+        font-size: 16px;
+    }
+
+    #features .bookmark .mark p {
+        font-size: 12px;
+    }
+
+    #download .down {
+        gap: 5px;
+        margin: 10px 5px;
+    }
+
+    #download .load {
+        border-radius: 10px;
+    }
+
+    #download .load .image {
+        margin: 10px 10px;
+        margin-bottom: 10px;
+    }
+
+    #download .load h4 {
+        font-size: 12px;
+    }
+
+    #download .load p {
+        font-size: 12px;
+    }
+
+    #download .load button {
+        padding: 6px 8px;
+        margin: 10px 60px;
+    }
+
+    #stay .date {
+        padding: 0 20px 40px;
+    }
+
+    #stay .date p {
+        font-size: 20px;
+        padding: 15px 200px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    main .container h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    main .container p {
+        font-size: 12px;
+        padding: 11px 0;
+    }
+
+    .toogler {
+        display: block;
+    }
+
+    .ri-close-circle-fill {
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        gap: 30px;
+        background-color: white;
+        border: 1px solid gray;
+        width: 70%;
+        top: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+
+    main img {
+        width: 45%;
+    }
+
+    main .button .btn,
+    main .button .btn1 {
+        padding: 4px 6px;
+    }
+
+    #features .feat h1 {
+        font-size: 16px;
+    }
+
+    #features .feat p,
+    #download .download p,
+    #frequent .asked p {
+        padding: 13px 60px;
+    }
+
+    #features .feat ul {
+        gap: 10px;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+
+    #features .bookmark .mark h2 {
+        font-size: 16px;
+    }
+
+    #features .bookmark .mark p {
+        font-size: 12px;
+    }
+
+    #download .down {
+        gap: 5px;
+        margin: 10px 5px;
+    }
+
+    #download .load {
+        border-radius: 10px;
+    }
+
+    #download .load .image {
+        margin: 10px 10px;
+        margin-bottom: 10px;
+    }
+
+    #download .load h4 {
+        font-size: 10px;
+    }
+
+    #download .load p {
+        font-size: 10px;
+    }
+
+    #download .load button {
+        padding: 4px 6px;
+        margin: 10px 60px;
+    }
+
+    #stay .date {
+        padding: 0 20px 30px;
+    }
+
+    #stay .date p {
+        font-size: 18px;
+        padding: 15px 150px;
+    }
+}
